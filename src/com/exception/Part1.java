@@ -28,6 +28,7 @@ public class Part1 {
 				//file from london location
 			}catch(Exception e){
 				// get /ocal file 
+				System.out.println("");
 			}
 		 
 		 /*
