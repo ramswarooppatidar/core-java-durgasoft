@@ -38,7 +38,7 @@ public class Part7_override_var_arg {
 	 * in the above program if we replace child method with vararg method then it will become
 	 * overriding, in this case the output is, parent child child
 	 * 
-	 * Variable resoltion always taje care by compiler, based on refernce type, in respective of
+	 * Variable resoltion always take care by compiler, based on refernce type, in respective of
 	 * whether the variable is static or non static(overiding concept aplicable only for methods but 
 	 * not for varible)
 	 * 

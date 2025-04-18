@@ -13,7 +13,7 @@ class x{
 class Display{
 	public synchronized void wishe(String name) {
 		for(int i =0; i<10; i++) {
-			System.out.print("Good morning : ");
+			System.out.print("Good morning : "+name);
 			try {
 				Thread.sleep(1000);
 			}catch(InterruptedException e) {

@@ -44,5 +44,20 @@ public class JVM_RUN_GC {
 	//Jprobe
 	//patrol
 	//ibm tivoli
+	/*
+	 * VisualVM – A built-in profiling tool in JDK for monitoring memory usage, detecting memory leaks, and analyzing heap dumps.
+
+		Eclipse MAT (Memory Analyzer Tool) – Helps analyze heap dumps and find memory leaks with deep insights.
+		
+		JProfiler – A powerful commercial profiler for memory and CPU analysis.
+		
+		YourKit Java Profiler – Another advanced tool to detect memory leaks and analyze CPU performance.
+		
+		GC Logs & jstat – Java Garbage Collector logs and jstat command help monitor JVM memory consumption.
+		
+		JConsole – A lightweight tool for real-time monitoring of Java memory usage.
+
+
+	 */
 
 }

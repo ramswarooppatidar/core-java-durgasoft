@@ -52,7 +52,7 @@ public class Part6_OverridingAccessModifier{
 		pa1.m5();
 	}
 	/*
-	 * IF child class method throws any checked exception compulasry arent class method shuold throw the 
+	 * IF child class method throws any checked exception compulasry parent class method shuold throw the 
 	 * same exception or its parent, other wise we will get compile time error, but there is not restriction
 	 * for unchecked exception
 	 */

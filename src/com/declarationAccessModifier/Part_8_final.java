@@ -64,6 +64,22 @@ public class Part_8_final {
 		 * 
 		 * 
 		 */
+		
+		/*
+		 * LOCAL VARIBLE
+		 * the only applicable modifier for local variable is, final by mistake if we trying to apply any other 
+		 * modifier then we will get compile time error,
+		 * 
+		 * NOTE : if we are not declaring any modifier then by default it is default but this is rule is
+		 * appicble only for , instance and static varibles, but not for llocal varibles
+		 * 
+		 * m1(int x, int y) {x=100, y=200} //formal paramter
+		 * m1(final int x, int y){}
+		 * Formal permeter of a method simply as a local varible of the method hence formal perameter can be
+		 * declre as final,
+		 * if formal varible declare as final then, within the method we cant perfom reassignment
+		 * 
+		 */
 
 	}
 

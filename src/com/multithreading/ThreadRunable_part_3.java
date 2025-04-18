@@ -66,7 +66,7 @@ public class ThreadRunable_part_3 {
 	    
 	    r.start()  compile thime error, saying myRunable class dosn't have start capability
 	    
-	    r.run() no new thread will be created , and my runable run method will be executed, like a normal
+	    r.run() not new thread will be created , and my runable run method will be executed, like a normal
 	    method call;
 		*/
 		
@@ -74,6 +74,7 @@ public class ThreadRunable_part_3 {
 		//RECOMMONDED
 		/*
 		among two way to defined a thread implements runable approch is recommanded
+		
 		int the first approc our class always extends thread class, there is no chance of extending any
 		other class, hence we are mmissing, inheritance benifits
 		

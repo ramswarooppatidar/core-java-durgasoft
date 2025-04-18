@@ -17,7 +17,7 @@ public class GC_finalize_5 {
 		 s= null;
 		 System.gc();
 		 Thread.sleep(4000);
-//		 System.out.println(s.hashCode());  // java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "garbageCollection.GC_
+	 System.out.println(s.hashCode());  // java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "garbageCollection.GC_
 		 System.out.println("End of main method");
 
 	}
