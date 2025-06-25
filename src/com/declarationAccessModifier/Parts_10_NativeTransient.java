@@ -57,7 +57,7 @@ public class Parts_10_NativeTransient {
 		//volatile
 	/*
 	 * volatile is modifier applicable only for varible, and we cant apply any where else .
-	 * if the vaue of the varible keepon changing by multiple threadthen there may be a chance f dta inconsistancy
+	 * if the vaue of the varible keep on changing by multiple thread, then there may be a chance of data inconsistancy
 	 * problem we can solve this problem by using volatile modifier
 	 * if a varible declared as volatile then for every thread jvm will cretae a seprated local copy,
 	 * every modification performed by the thread will takes place in local file, so there is no affect on remianing

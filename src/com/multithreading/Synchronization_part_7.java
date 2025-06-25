@@ -46,8 +46,9 @@ public class Synchronization_part_7 {
 		 there may be a chance of data inconsistance problem, to overcome this problem we should
 		 go for synchronized key word
 		 
-		 if a method or block decleared as scynchronized then at a time i=only one thread is allowed to excecute
-		 that method or bock on given objec, so that data inconsistancy problem will be resolved
+		 if a method or block decleared as scynchronized then at a time i=only one thread is allowed
+		 to excecute that method or bock on given objec, so that data inconsistancy problem 
+		 will be resolved
 		 
 		 the man advatage of scynch key word is we can resolve data inconsistency problems, but main 
 		 disavatage of synck key word is it increase waitng time of thread and creates performance 
@@ -65,7 +66,7 @@ public class Synchronization_part_7 {
 		 
 		 
 		 while a thread executing shcyn. method on given object the remaining thread are not allowed to 
-		 execute to any synch,. method on the same object but, temianing thread are allowed to 
+		 execute to any synch,. method on the same object but, remianing thread are allowed to 
 		 execute non synch. method simulataniously
 		 
 		 Lock concept implemented on object but not based on method

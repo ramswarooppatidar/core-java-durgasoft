@@ -9,7 +9,7 @@ public class Part4 {
 		
 	}
 	public static void m2(ArrayList<?> l) {
-//			l.add("");  error
+//		l.add("");  error
 		l.add(null);
 		
 		//read only operation, this type of methods

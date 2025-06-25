@@ -16,7 +16,7 @@ class MyThreadJoin extends Thread{
 			try {
 				Thread.sleep(2000);
 			}catch(InterruptedException e) {
-				
+				System.out.println("thred is intrupted");
 			}
 		}
 	}
@@ -45,8 +45,11 @@ public class PreventThread_part_5 {
 	*/
 		MyThreadYield t1 = new MyThreadYield();
 		t1.start();
-		System.out.println(t1.getPriority());
-		System.out.println(Thread.currentThread().getPriority());
+		System.out.println("priority : "+t1.getPriority());
+		MyThreadYield t12 = new MyThreadYield();
+		t12.start();
+		System.out.println("priority : "+t12.getPriority());
+		System.out.println("priority main : "+Thread.currentThread().getPriority());
 		for(int i =0; i<2; i++) {
 			System.out.println("main thread main");
 		}
@@ -61,6 +64,8 @@ public class PreventThread_part_5 {
 	*/
 		
 	/*
+	      JOIN :
+	      
 		  IF A THREAD WANT TO WAIT UNTIL COMPLETING OTHER THREAD THEN WE SHOULD GO FOR JOIN METHOD
 		  IF THREAD T1 WANT TO WAIT UNTIL COMPLETING T2 THEN T1 HAS TO CALL T2.JOIN
 		  IF T1 execute t2.join() then immedeaitely t1 will be wating state until t2 competer
@@ -81,18 +86,19 @@ public class PreventThread_part_5 {
 	*/
 		
 		MyThreadJoin t2 = new MyThreadJoin();
-		t2.start();
+//		t2.start();
 		
-		try {
-//			t2.join();
-			t2.join(6000);  //dead line only for 10 sec
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		for(int i =0; i<10; i++) {
-			System.out.println("Rama thread : ");
-		}
+//		try {
+//           //t2.join();
+//			t2.join(8000);  //dead line only for 10 sec
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println("intruoted ......");
+//			e.printStackTrace();
+//		}
+//		for(int i =0; i<10; i++) {
+//			System.out.println("Rama thread : ");
+//		}
 	}
 
 }

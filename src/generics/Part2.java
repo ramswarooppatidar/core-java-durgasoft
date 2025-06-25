@@ -46,7 +46,7 @@ public class Part2<T> {
 		//
 		//conclusion 2
 		/*
-		 * fir the type perameter we can provide any classandinterface name but not primitives 
+		 * fir the type perameter we can provide any class and interface name but not primitives 
 		 * if we are tyring to provide premittive then we will get compile type error
 		 * List<int> list3 = new ArrayList<>();
 		 */

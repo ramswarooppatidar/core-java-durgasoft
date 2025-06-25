@@ -4,9 +4,12 @@ class MyThread extends Thread{
 	public void run() {
 		//execute child class
 		System.out.println("run method");
-//		for(int i =0; i<10; i++) {
-//			System.out.print(i+" ");
-//		}
+		for(int i =0; i<1000; i++) {
+			System.out.print(i+" ");
+			if(i%10==0){
+				System.out.println();
+			}
+		}
 	}
 	public void start() {
 		//execute run method
@@ -69,7 +72,7 @@ public class Introduction_part_2 extends Thread {
 		 * 
 		 * it is responsible to perform to register the thread with thread schedular and all other mendetory 
 		 * activities, hence withiout excuting thread class start method there is no chance to start
-		 * new thread injava due to this thrad method of start is heart of multi threading
+		 * new thread in java due to this thrad method of start is heart of multi threading
 		 * 
 		 * start(){
 		 * 10 register thread schedular
@@ -126,9 +129,9 @@ public class Introduction_part_2 extends Thread {
 		System.out.println("main thread");
 		System.out.println();
 		
-//		for(int i =11; i<33; i++) {
-//			System.out.print(i+" ");
-//		}
+		for(int i =11; i<33; i++) {
+			System.out.print("ram"+" "+i);
+		}
 
 	}
 

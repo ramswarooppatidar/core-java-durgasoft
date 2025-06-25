@@ -26,11 +26,12 @@ package com.multithreading;
 	 
 	 
 	 public void run() {
-		 for(int i=0; i<10000; i++) {
+		 for(int i=0; i<100; i++) {
 			 System.out.println("i am lazy thread :"+i);
 		 }
 		 try {
 			 Thread.sleep(2000);
+			 System.out.println("thred is sleeping 2000 ");
 		 }catch(InterruptedException e) {
 			 System.out.println("im intrupted after 100000 ");
 		 }
@@ -42,8 +43,8 @@ public class PreventThread_Interupted_part_6_II {
 		// TODO Auto-generated method stub
 		MyIntrupt t = new MyIntrupt();
 		t.start();
-		t.interrupt(); //line 1
-		for(int i=0; i<10000;i++) {
+//		t.interrupt(); //line 1
+		for(int i=0; i<100;i++) {
 			System.out.println("Main thread");
 		}
 
@@ -51,14 +52,16 @@ public class PreventThread_Interupted_part_6_II {
 	/*
 	  if we comment line 1 , then main thread won't intrupt child thread, in this case child
 	  thread execute for loop 10 times,
-	  if we mot commenting line, then main Thread ntrup child thread, in this case ouput is
+	  if we mot commenting line, then main Thread intrup child thread, in this case ouput is
 	  main threa.....child thread..im intrupted..main thread
 	  
 	  NOTE *****
 	  whenever we are calling intrupt method if the target thread not in sleeping state or wating
-	  state then tere is no impect of, intrupt call imediatly, intrupt call will be waited until
-	  target thread,thread entred into sleeping and waitng state(join),
-	  if target thread enterde into sleeping and wating satte then imediate intrupt call intrupt thread
+	  state then there is no impect of intrupt call imediatly,
+	  intrupt call will be waited until target thread entred into sleeping and waitng state(join),
+	  
+	  if target thread enterde into sleeping and wating state then imediate intrupt is call
+	  and intrupt the thread
 	  
 	 
 	  if the target thread never enterd into sleeping and wating state in its life time , then there is

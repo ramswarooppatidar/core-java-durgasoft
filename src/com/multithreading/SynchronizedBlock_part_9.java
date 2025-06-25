@@ -58,7 +58,7 @@ public class SynchronizedBlock_part_9 {
 		sync(this){
 		}
 		to get lock of particular object b,
-		sunch(b){
+		synch(b){
 			if a thread got lock of particular object b, then only it is allowed to execute this area
 		}
 		synch(Display.class){

@@ -31,12 +31,12 @@ public class Part_9_StaticModifier {
 		Part_9_StaticModifier t2 = new Part_9_StaticModifier();
 		System.out.println("x "+t2.x +" , y : "+t2.y);
 	/*
-	 * sttaic is modifier applicable for method , varibles but tnot for classes
+	 * sttaic is modifier applicable for method , varibles but not for classes
 	 * we cant declare top level class with static modifier but we can declear inner class as static
 	 * (such type of inner classes are static nested classes)
 	 * 
-	 * in the case of instance varible for every object a seprate copy willbe cretaed but in case of
-	 * sttaic varoble a single copy will be created at clas slvevel and shread by every object of that class
+	 * in the case of instance variable for every object a separate copy will be created but in case of
+	 * static variable a single copy will be created at class lvevel and shread by every object of that class
 	 * 
 	 * 
 	 * we cant access instance member directly from static area but we can access from instance area directly
@@ -66,7 +66,7 @@ public class Part_9_StaticModifier {
 	 * NOTE for static methods overloading and inheritance concept are applicable but overriding concept 
 	 * are not applicble but instance of veridng method hiding concept is aplicable
 	 * 
-	 * case 4 :
+	 * CASE 4 :
 	 * in side method implemetion if we are using at least one instance varible , then that method talk 
 	 * about a particular object hence we shoul declare method as instance method,
 	 * inside method implemention if are not using , any instance varible then this method no where related to 
@@ -79,7 +79,7 @@ public class Part_9_StaticModifier {
 		
 	/*
 	 * SYNCHRONIZED
-	 * is the modifier applicable for method and vblocks, but not for varible and classes,
+	 * is the modifier applicable for method and blocks, but not for varible and classes,
 	 * if the multiple thread operating simulataniuly on the same java object then there may be a chance of data
 	 * incinsistance problem this is called race condtion,
 	 * we can overcome this problem by using synchronized key word,
@@ -89,7 +89,7 @@ public class Part_9_StaticModifier {
 	 * word is it increasing wating time o thred and creating peformr problem if there is o speific rewuired
 	 * then it is not recommendrd to use syn key word
 	 * 
-	 * syn ethod shold compulsray conatin implementaion where abstarct method dosnt implemention, hence abstarct
+	 * syn ethod should compulsray conatin implementaion where abstarct method dosnt implemention, hence abstarct
 	 * sysnchronized id illegal combition of modifier for methods
 	 */
 

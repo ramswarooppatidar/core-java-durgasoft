@@ -23,19 +23,19 @@ class MyThread_s extends Thread{
 		this.x =x;
 	}
 	public void run() {
-		display.wishe(string);
-		X1.m1();
-//		X1.m2();
-//		X1.m3();
+//		display.wishe(string);
+//		X1.m1();
+//		X1.m2(string);
+		X1.m3();
 //		x.m4();
-		x.m5();
+//		x.m5();
 		
 	}
 }
 class X1{
-	static synchronized void m1() {
+	static synchronized void m1(String name) {
 		for(int i =0; i<10; i++) {
-		System.out.println("m1 static sync. method is called : ");
+		System.out.println("m1 static sync. method is called : "+name);
 		try {
 			Thread.sleep(1000);
 		}catch(InterruptedException e) {
@@ -44,9 +44,9 @@ class X1{
 		System.out.println("m1");
 		}
 	}
-	static synchronized void m2() {
+	static synchronized void m2(String name) {
 		for(int i =0; i<10; i++) {
-		System.out.println("m2 static sync. method is called : ");
+		System.out.println("m2 static sync. method is called : "+ name);
 		try {
 			Thread.sleep(1000);
 		}catch(InterruptedException e) {
@@ -55,9 +55,9 @@ class X1{
 		System.out.println("m2");
 		}
 	}
-	static void m3() {
+	static void m3(String name) {
 		for(int i =0; i<10; i++) {
-		System.out.println("m3 static method is called : ");
+		System.out.println("m3 static method is called : "+name);
 		try {
 			Thread.sleep(1000);
 		}catch(InterruptedException e) {
@@ -66,7 +66,7 @@ class X1{
 		System.out.println("m3");
 		}
 	}
-	synchronized void m4() {
+	synchronized void m4(String name) {
 		for(int i =0; i<10; i++) {
 		System.out.println("m4  sync. method is called : ");
 		try {
@@ -93,12 +93,14 @@ public class Synchronization_part_8 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Display_1 d1 = new Display_1();
-//		Display_1 d2 = new Display_1();
-//		MyThread_s t1 = new MyThread_s(d1, "Dhoni");
-//		MyThread_s t2 = new MyThread_s(d2, "Yuvraj");
-//		t1.start();
-//		t2.start();
+		Display_1 d1 = new Display_1();
+		Display_1 d2 = new Display_1();
+		X1 x1 = new X1();
+		X1 x2 = new X1();
+		MyThread_s t1 = new MyThread_s(d1, "Dhoni",x1);
+		MyThread_s t2 = new MyThread_s(d2, "Yuvraj", x2);
+		t1.start();
+		t2.start();
 		
 		/*
 		 CASE STUDY : 
@@ -124,13 +126,13 @@ public class Synchronization_part_8 {
 		 normal instance method
 		 
 		*/
-		X1 x = new X1();
-		Display_1 d1 = new Display_1();
-		Display_1 d2 = new Display_1();
-		MyThread_s t1 = new MyThread_s(d1, "Dhoni",x);
-		MyThread_s t2 = new MyThread_s(d2, "Yuvraj", x);
-		t1.start();
-		t2.start();
+//		X1 x = new X1();
+//		Display_1 d1 = new Display_1();
+//		Display_1 d2 = new Display_1();
+//		MyThread_s t1 = new MyThread_s(d1, "Dhoni",x);
+//		MyThread_s t2 = new MyThread_s(d2, "Yuvraj", x);
+//		t1.start();
+//		t2.start();
 		
 	}
 

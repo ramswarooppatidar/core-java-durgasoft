@@ -1,6 +1,7 @@
 package com.collecton;
 
 import java.util.Enumeration;
+import java.util.Stack;
 import java.util.Vector;
 
 public class Part_5 {
@@ -29,6 +30,9 @@ public class Part_5 {
 			if(aInteger%2 == 0)
 				System.out.println(aInteger);
 		}
+		
+		Vector<Integer> stack = new Stack<Integer>();
+		stack.elements();
 	}
 
 }

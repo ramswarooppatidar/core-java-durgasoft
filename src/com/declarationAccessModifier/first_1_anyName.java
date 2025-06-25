@@ -21,6 +21,13 @@ class C{
 
 	}
 }
+public class first_1_anyName{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("public class main method is execute");
+
+	}
+}
 	/*
 	 * a java program can conatin any number of classes but at most class can be decler as public if there is
 	 * a public class then name of the program and name of the public class must be matched, otherwise we will

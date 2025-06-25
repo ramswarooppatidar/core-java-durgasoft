@@ -8,6 +8,7 @@ public class Part_1 {
 /*
  * homogenious, fixed size
    in array no underline method is vaiable, like araylist
+   
     Collection :
     an array is an indexed collection of fixed number of homogenious data elements, 
     the main advantage of array is we can represent multiple values by using single varible
@@ -15,16 +16,20 @@ public class Part_1 {
     
     limitaton of aarays:
     1) arrays are fixed in size, once we ceate an array there is no cance of incresing or dec size
-    based on over requiremnt, dueto this to use array concept complsury we should know size in advatnce
+    based on over requiremnt, due to this to use array concept complsury we should know size in advatnce
     which ma not possible always
+    
     2) array can hold only homogenious data type elements
+    
     3) array concept is not implemented based on some standard data structure and hence redimated method
     support is not availble, for every requirment we have to write the code , explacitly which increase
     complexity of programming
+    
     4)to overcome above problems we should go for collection concept
     
     5)Collection are growable in nature, based on our requirment we can increse or decre the size
     collection can hold both homogenious and hetrogenous elements,
+    
     every collection class is implemented based on some standard data structre, hence for every requiremnt
     redimate method support is availbe, 
     beign a programming we are responsible to use those methods and we are not responsible to implements

@@ -17,6 +17,7 @@ public class Part_7_Set {
 		set.add(30);
 		set.add("a");   //false
 		System.out.println(set);
+		set.forEach(s-> System.out.println(s));
 //		ShortedSet<Integer> h = new TreeSet<Integer>();
 	}
 }

@@ -69,7 +69,7 @@ public class PreventThread_part_6 {
 		//sleep thread
 		for(int i =0; i<10; i++) {
 			System.out.println("sleep thread");
-			Thread.sleep(50000);
+			Thread.sleep(1000);
 		}
 		
 		/*
